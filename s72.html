@@ -1,0 +1,23 @@
+
+<html>
+	<head>
+		<metacharset="UTF-8">
+		<title>Tegning med javascript</title>
+	</head>
+	
+	<body>
+		<canvas id="canvas"width="200"height="140"></canvas>
+		<script>var canvas=document.getElementById("canvas");
+				var ctx=canvas.getContext("2d");
+				ctx.fillRect(30,20,50,50);
+				ctx.fillStyle="orange";
+		</script>
+		<canvas id="firkant"width="500"height="400"></canvas>
+		<script>var firkant=document.getElementById("firkant");
+				var firkant=firkant.getContext("2d");
+				firkant.fillRect(30,20,50,50);
+				firkant.fillStyle="green";
+				firkant.lineStyle="red";
+		</script>
+	</body>
+</html>
