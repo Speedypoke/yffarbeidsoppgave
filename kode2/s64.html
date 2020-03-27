@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Side 64 </title>
+	</head>
+
+	<body>
+		<h1>Antall varer</h1>
+		<script>
+			var antallFrukt=prompt("Skriv inn antall frukt.");
+			var antallGronnsaker=prompt("Skriv inn antall gronnsaker.");
+			var antallVarer=Number(antallFrukt)+Number(antallGronnsaker);
+			document.write("Totalt varer til sammen: "+antallVarer+"");
+		</script>
+		<h1>Pris med moms</h1>
+		<script>
+			var pris=prompt("Skriv inn pris.");
+			var moms=Number(pris)*1.25;
+			moms.toFixed(2)
+			document.write("Pris med moms: "+moms+"")
+		</script>
+		<h1>Mobilabonnement</h1>
+		<script>
+			var datamengde=prompt("Skriv inn datamengde her.");
+			var antSamtaler=prompt("Skriv inn antall samtaler her.");
+			var ringetid=prompt("Skriv inn ringetid her.");
+			var antSMS=prompt("Skriv inn antall SMS her.");
+			var antMMS=prompt("Skriv inn antall MMS her.");
+				var totalt=datamengde*10+antSamtaler*0.89+ringetid*0.39+antSMS*0.69+antMMS*1.99;
+			document.write=("Pris totalt="+totalt+"");
+		</script>
+		<h1>Array</h1>
+		<script>
+			var array=["Dette","er","eit","bra","array"];
+			document.write(array[4]");
+		</script>
+		<h1>Objekter</h1>
+		<script>
+		var frukt1={navn:"Frukt1",pris:15};
+		var frukt2={navn:"Frukt2",pris:18};
+		var frukt3={navn:"Frukt3",pris:17};
+		frukt2.pris=16;
+		</script>
+	</body>
+</html>

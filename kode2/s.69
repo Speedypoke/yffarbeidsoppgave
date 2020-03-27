@@ -1,0 +1,11 @@
+<html>
+	<head>
+		<metacharset="UTF-8">
+		<title>Minførstetegning</title>
+	</head>
+	
+	<body>
+		<p id="Natur"></p>.
+		<script>var Natur=document.getElementById("Natur");</script>
+	</body>
+</html>

@@ -1,0 +1,64 @@
+<html>
+	<head>
+		<title>Side 60</title>
+	</head>
+	
+	<body>
+		<h1>Areal</h1>
+		<script>var hoyde = 5;
+				var bredde = 2;
+				var areal = hoyde * bredde;  /*Reknar ut arealet*/
+				document.write("Arealet er "+areal+"");
+		</script>
+		<h1>Omkrins</h1>
+		<script>var hoyde = 5;
+				var bredde = 2;
+				var omkrins = 2*(hoyde + bredde); //Reknar ut omkrinsen
+				document.write("Omkrinsen er "+omkrins+"");
+		</script>
+		
+		<h1>Terning</h1>
+		<script>
+			var terning=Math.floor(Math.random()*6)+1; document.write("Terning fra 1 til 6 - ["+terning+"]");
+		</script>
+		<br>
+		<br>
+		<script>
+			var terning=Math.floor(Math.random()*11); document.write("Terning fra 0 til 10 - ["+terning+"]");
+		</script>
+		<br>
+		<br>
+		<script>
+			var terning=Math.floor(Math.random ()*11)+10; document.write("Terning fra 10 til 20 - ["+terning+"]");
+		</script>
+		<br>
+		<br>
+		<h1>Utrekning av kule</h1>		
+		<script>
+				var radius=prompt ("Velg radius til kulen");
+				var omkrets=2*Math.PI*radius;
+				var volum=4*Math.PI*Math.pow(radius,3);
+				var areal=4*Math.PI*Math.pow(radius,2);
+				Omkrets=Math.round(omkrets);	
+				Volum=Math.round(volum);//Runder av til et heltall
+				Areal=Math.round(areal);
+				document.write("Dersom radien i en kule er "+radius+" meter, er arealet "+areal+" kvadratmeter, volumet "+volum+" og omkretsen "+omkrets+" meter.");
+		</script>
+		<h1>Karaktersetting</h1>
+		<script>
+				var antallpoeng=prompt ("Velg antall poeng");
+				var muligepoeng=prompt ("Velg antall mulige poeng");
+				var karakter=(antallpoeng/muligepoeng)*6;
+				document.write("Karakteren blir "+karakter+" dersom antall poeng er "+antallpoeng+" ut av "+muligepoeng+" mulige poeng")
+		</script>
+		<br>
+		<h1>KMI-kalkulator</h1>
+		<script>
+				var vekt=prompt ("Skriv inn vekt i kg");
+				var høyde=prompt ("Skriv inn høyde i meter");
+				var kmi=vekt/Math.pow(høyde,2);
+				document.write("Kroppsmasseindeksen blir "+kmi+" dersom høyden er "+høyde+" og vekta er "+vekt+"")
+		</script>
+		
+	</body>
+</html>
