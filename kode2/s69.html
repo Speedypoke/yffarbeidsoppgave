@@ -9,5 +9,38 @@
 		<script>var natur=document.getElementById("Natur");
 		natur.innerHTML"Natur";
 		</script>
+		
+		<p id="svar"></p>
+		<script>
+			var svarPåSpørsmal = prompt("Kva er ditt etternamn?");
+			var parSvar = document.getElementById("svar");
+			parSvar.innerHTML = svarPåSpørsmal;
+		</script>
+
+		<p id="favorittfilmar"></p>
+		<script>
+			var arrFavorittfilmar = ["Fast and Furious", "Avengers", "Biler"];
+			var parFilmer = document.getElementById("favorittfilmar");
+			parFilmar.innerHTML = arrFavorittfilmar;
+		</script>
+
+		<h1>Min handleliste</h1>
+		<ul id="handleliste"></ul>
+		<script>
+			var handleliste = document.getElementById("handleliste");
+			var vare1 = prompt("Skriv inn første vare.");
+			var vare2 = prompt("Skriv inn andre vare");
+			var vare3 = prompt("Skriv inn tredje vare");
+			handleliste.innerHTML = "<li>Vare 1: <b>" + vare1 + "</b></li>";
+			handleliste.innerHTML += "<li>Vare 2: <b>" + vare2 + "</b></li>";
+			handleliste.innerHTML += "<li>Vare 3: <b>" + vare3 + "</b></li>";
+		</script>
+
+		<img id="bilde">
+		<script>
+			var bilde = document.getElementById("bilde");
+			bilde.src="bilete/bilete"+(Math.floor(Math.random()*3)+2)+".jpg";
+		</script>
+
 	</body>
 </html>

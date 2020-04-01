@@ -1,23 +1,71 @@
 
 <html>
 	<head>
-		<metacharset="UTF-8">
 		<title>Tegning med javascript</title>
 	</head>
 	
 	<body>
-		<canvas id="canvas"width="200"height="140"></canvas>
-		<script>var canvas=document.getElementById("canvas");
-				var ctx=canvas.getContext("2d");
-				ctx.fillRect(30,20,50,50);
-				ctx.fillStyle="orange";
+		<canvas id="canvas" width="200" height="200"></canvas>
+		<script>
+			var canvas = document.getElementById("canvas");
+			 var ctx = canvas.getContext("2d");
+			ctx.fillRect(30,20,50,50);
+			ctx.fillStyle= "red";
+			ctx.stroke();
 		</script>
-		<canvas id="firkant"width="500"height="400"></canvas>
-		<script>var firkant=document.getElementById("firkant");
-				var firkant=firkant.getContext("2d");
-				firkant.fillRect(30,20,50,50);
-				firkant.fillStyle="green";
-				firkant.lineStyle="red";
+		<br>
+		<canvas id="canvas" width="500" height="400"></canvas>
+		<script>
+			var canvas = document.getElementById("canvas");
+			var ctx = canvas.getContext("2d");
+			ctx.strokeStyle= "red";
+			ctx.fillStyle ="green";
+			ctx.lineWidth= 3;
+			ctx.fillRect(100,100,50,150);
+			ctx.strokeRect(100,100,50,150);
+			ctx.stroke();
+			ctx.strokeStyle ="blue";
+			ctx.moveTo(125, 120);
+			ctx.lineTo(140, 200);
+			ctx.lineTo(110, 200);
+			ctx.lineTo(125, 120);
+			ctx.stroke();
 		</script>
+		<br>
+		<canvas id="myCanvas" width="200" height="100" style="border:1px solid"></canvas>
+		<script>
+			var c = document.getElementById("myCanvas");
+			var ctx = c.getContext("2d");
+			ctx.fillStyle = "red";
+			ctx.fillRect(12.5,30,175,70);
+
+			ctx.fillStyle="black";
+			ctx.beginPath();
+			ctx.moveTo(12.5,30);
+			ctx.lineTo(185,30);
+			ctx.lineTo(99,0);
+			ctx.closePath();
+			ctx.fill();
+
+		</script>
+		<canvas id="choose" width="500" height="400"></canvas>
+		<script>
+			var choose = document.getElementById("choose");
+			var ctx = choose.getContext("2d");
+			var farge1 = prompt("Skriv inn farge på engelsk");
+			var farge2 = prompt("Skriv inn farge på engelsk");
+			var farge3 = prompt("Skriv inn farge på engelsk");
+			ctx.lineWidth= 3;
+			ctx.fillStyle = farge1;
+			ctx.fillRect(100,100,50,150);
+			ctx.stroke();
+			ctx.fillStyle = farge2;
+			ctx.fillRect(150,100,50,150);
+			ctx.stroke();
+			ctx.fillStyle = farge3;
+			ctx.fillRect(200,100,50,150);
+			ctx.stroke();
+		</script>
+
 	</body>
 </html>
